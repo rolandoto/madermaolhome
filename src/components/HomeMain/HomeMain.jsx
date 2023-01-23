@@ -7,16 +7,14 @@ import {Link} from "react-router-dom"
 import { useState } from 'react';
 
 const HomeMain = () => {
-
   const [toggleMenu, setToggleMenu] = React.useState(false);
-
-  const [loading,setLoading] =useState(false)
+  const [loading,setLoading] =React.useState(false)
 
   const hand=() =>{
     setLoading(true)
     setToggleMenu(false)
   }
-  
+   
   return (
     <nav className="app__navbar">
       <div className="app__navbar-logo">
@@ -71,6 +69,6 @@ const HomeMain = () => {
         </div>
     </nav>
   );
-};
+}
 
 export default HomeMain;
